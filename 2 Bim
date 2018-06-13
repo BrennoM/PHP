@@ -179,6 +179,20 @@
 			</textarea>
 		</form>
 	</div>
+	<h2><a href="https://outlook.live.com/mail/AQMkADAwATMwMAItY2EwMy1iZGM3LTAwAi0wMAoALgAAA1mib%2F1KiE5NqT9QJw8%2F3hIBAMr8K2srJAZEufm7C96zztoAAADhfl%2B3AAAA/id/AQQkADAwATMwMAItY2EwMy1iZGM3LTAwAi0wMAoAEADxjuICWYchQZpQDQI9vxQE/sxs/AQMkADAwATMwMAItY2EwMy1iZGM3LTAwAi0wMAoARgAAA1mib%2F1KiE5NqT9QJw8%2F3hIHAMr8K2srJAZEufm7C96zztoAAADhfl%2B3AAAAyvwrayskBkS5%2BbsL3rPO2gABpBzhVgAAAA%3D%3D/AQMkADAwATMwMAItY2EwMy1iZGM3LTAwAi0wMAoARgAAA1mib%2F1KiE5NqT9QJw8%2F3hIHAMr8K2srJAZEufm7C96zztoAAADhfl%2B3AAAAyvwrayskBkS5%2BbsL3rPO2gABpBzhVgAAAAESABAA68nZjB4jXky1ZC48vJveRA%3D%3D">Exercícios da lista 4</a></h2>
+	<?php 
+	$E=[2,6,8,3,10,9,1,21,33,14];
+	echo '<br>Array: <br>';
+	print_r($E);
+	for ($i=0; $i < count($E); $i++)
+		$Evindice[$i] = $E[$i]*$i;
+	echo '<br>Array -> posição*indice: <br>';
+	print_r($Evindice);
+	$inversoE=array_reverse($E);
+	echo '<br>Array inverso: <br>';
+	print_r($inversoE);
+
+	 ?>
 </body>
 <footer>
 	<p></p>
