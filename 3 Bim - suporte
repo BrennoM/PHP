@@ -13,7 +13,18 @@
 			elseif ($_POST["sexo"]=='M') echo ", meu garoto.";
 			else echo ", ser maravilhoso!";
 		}
-		else echo "nao informado";
-	  ?>
+		else echo "Nome nao informado";
+	?>
+	<?php
+
+		if (isset($_POST["obrigacoes"])){			
+			echo "<br/>Obrigacoes cumpridas: <br/>";
+			foreach ($_POST["obrigacoes"] as $obrigacoes) {
+				echo "-> $obrigacoes <br/>";				
+			}
+		}
+		else
+			echo "Voce vai morre";
+	?>
 </body>
 </html>
