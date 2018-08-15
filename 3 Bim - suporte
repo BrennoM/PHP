@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<?php
+		if ($_POST["nome"]!=""){
+			echo "Alo ".$_POST["nome"];
+			if ($_POST["sexo"]=='F'){
+				echo ", minha garota.";
+			}
+			elseif ($_POST["sexo"]=='M') echo ", meu garoto.";
+			else echo ", ser maravilhoso!";
+		}
+		else echo "nao informado";
+	  ?>
+</body>
+</html>
