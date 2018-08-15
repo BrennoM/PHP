@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Manipulação de formulário</h1>
+	<p>Página contendo um campo de texto, onde o usuário fornece o nome e seleciona submit. A ação deverá exibir: alô+naome da pessoa na pagina alô.php </p>
+	<p> Página com 3 botões radio e o submit, a ação irá exibir a resposta.</p>
+
+	<form action="alo.php" method="post">
+		<fieldset>
+			Nome: <input type="text" name="nome"/>
+			<br/><br/>
+			Sexo: 
+			<input type="radio" value="M" name="sexo">
+			<label for="sexo">Male</label>
+			<input type="radio" value="F" name="sexo">
+			<label for="sexo">Female</label>
+			<input type="radio" value="O" name="sexo">
+			<label for="sexo">Other</label>
+			<input type="submit"/>
+		</fieldset>
+	</form>
+
+	
+</body>
+</html>
