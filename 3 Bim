@@ -7,6 +7,8 @@
 	<h1>Manipulação de formulário</h1>
 	<p>Página contendo um campo de texto, onde o usuário fornece o nome e seleciona submit. A ação deverá exibir: alô+naome da pessoa na pagina alô.php </p>
 	<p> Página com 3 botões radio e o submit, a ação irá exibir a resposta.</p>
+	<p> Página com 6 checkbox pra exibir em outra pagina</p>
+	<p>Menu de seleção para o usuário escolher e exibir na pagina alo.php</p>
 
 	<form action="alo.php" method="post">
 		<fieldset>
@@ -19,7 +21,18 @@
 			<label for="sexo">Female</label>
 			<input type="radio" value="O" name="sexo">
 			<label for="sexo">Other</label>
-			<input type="submit"/>
+			</br>
+
+			OBRIGAÇÕES CUMPRIDAS</br>
+			<input type="checkbox" name="obrigacoes[]" value="matar"> MATAR ALGUÉM </br>
+			<input type="checkbox" name="obrigacoes[]" value="comer"> COMER ALGUÉM VIVO </br> 
+			<input type="checkbox" name="obrigacoes[]" value="fogo"> ATEAR FOGO NUM ASILO </br>
+			<input type="checkbox" name="obrigacoes[]" value="estrangular"> ESTRANGULAR UM PORCO </br>
+			<input type="checkbox" name="obrigacoes[]" value="entranhas"> TIRAR AS ENTRANHAS DE UMA COBRA PELA SUA BOCA </br>
+
+			<input type="submit">
+
+
 		</fieldset>
 	</form>
 
