@@ -157,7 +157,7 @@
 			?>
 			<h1>3º Bimestre</h1>
 				<h2 id="formphp">Manipulação de formulários com PHP</h2>
-				<form action="suporte_PHP_materia_2ano.php" method="post">
+				<form action="2ano_sup.php" method="post">
 					<fieldset>
 						Nome: <input type="text" name="nome"/>
 						<br/><br/>
