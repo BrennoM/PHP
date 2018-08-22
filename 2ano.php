@@ -3,45 +3,9 @@
 	<head>
 		<title>PHPZÃO</title>
 		<meta charset="utf-8">
+		<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
 		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-		<style type="text/css">
-			body{
-				background-color: #ff9966;
-				color: white;
-				font-family: 'Lobster', cursive;
-				font-style: oblique;
-				font-size: 130%;
-				text-align: center;
-				letter-spacing: 1.2px;
-				text-shadow: 1px 1px rgba(0,0,0,0.7);
-			}
-			#menu{
-				margin-top: -1.9%;
-				margin-left: -0.5%;
-				margin-right: -0.5%;
-				background-color: rgba(255,250,250,0.2);
-			}
-			#menu ul{
-				color: #333;
-				list-style:none;
-			}
-			#menu ul li{
-				display: inline;
-			}
-			#menu ul li a {
-				padding: 2px 10px;
-				display: inline-block;
-				text-decoration: none;
-				color: #333;
-			}
-			#menu ul li a:hover {
-	    		color: #6D6D6D;
-	    	}
-			a{
-				text-decoration: underline;
-				color: white;
-			}
-		</style>
+		
 	</head>
 	<body>
 		<nav id="menu">
@@ -221,24 +185,37 @@
 							<option value="Sexo">Sexo</option>
 							<option value="Rock em Roll">Rock em Roll</option>
 						</select>
-						<br>
-						<h3>Calculadouser</h3>
-						<br>
-						<br>
-						Primeiro number
-						<input type="number" name="number1[]" value="n1">
-						Segundo Number	
-						<input type="number" name="number2[]" value="n2">	
-						Operation
-						<label for="operation">Adição</label>
-						<input type="radio" name="operation" value="adicao">
-						<label for="operation">Subtração</label>
-						<input type="radio" name="operation" value="subtracao">
-						<label for="operation">Multiplicação</label>
-						<input type="radio" name="operation" value="multiplicacao">				
-						<label for="opertion">Divisão</label>
-						<input type="radio" name="operation" value="divisao">
-						<input type="submit">
+							<fieldset>			
+								<h3>Calculadouser: The besti calc</h3>
+								<h4>Insirer touder</h4>
+								Primeiro number
+								<br>
+								<input type="number" name="number1[]" value="n1">
+								<br>
+								Segundo Number	
+								<br>
+								<input type="number" name="number2[]" value="n2">
+								<h4>Operation</h4>
+								<ul style="text-align: left; list-style-type: none;  padding-left: 50%;">
+									<li>
+										<input type="radio" name="operation" value="adicao">
+										<label for="operation">Adição</label>
+									</li>
+									<li>
+										<input type="radio" name="operation" value="subtracao">
+										<label for="operation">Subtração</label>
+									</li>
+									<li>
+										<input type="radio" name="operation" value="multiplicacao">	
+										<label for="operation">Multiplicação</label>
+									</li>
+									<li>
+										<input type="radio" name="operation" value="divisao">
+										<label for="opertion">Divisão</label>
+									</li>
+								</ul>
+								<input type="submit">	
+						</fieldset>
 					</fieldset>
 				</form>
 		</div>
