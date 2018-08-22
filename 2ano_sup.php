@@ -4,12 +4,18 @@
 	<title></title>
 	<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>	
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<style type="text/css">
+		body{
+			font-size: 20px;
+		}
+	</style>
 </head>
 <body>
 	<div id="content"></div>
 	<?php
+		echo "<h1> Aqui estao todas as infos da sua vida</h1>";
 		if ($_POST["nome"]!=""){
-			echo "Alo ".$_POST["nome"];
+			echo "<br/>Alo ".$_POST["nome"];
 			if ($_POST["sexo"]=='F'){
 				echo ", minha garota.";
 			}
@@ -27,7 +33,7 @@
 			}
 		}
 		else
-			echo "Voce vai morre";
+			echo "Voce vai morre<br/>";
 	?>
 	<?php
 		if (isset($_POST["felis"])) {
@@ -37,9 +43,10 @@
 			}
 		}
 		else 
-			echo "vose e um em felis...";
+			echo "vose e um em felis...<br>";
 	?>
-	<?php  
+	<?php
+	  	echo "<h1> Calcuzator </h1>";
 		if (isset($_POST["number1"]) && $_POST["number2"] && $_POST["operation"]) {
 			foreach ($_POST["number1"] as $number1) 
 			foreach ($_POST["number2"] as $number2)
@@ -69,6 +76,11 @@
 		else
 			echo "error_log(algo de errado nao esta serto)";
 		echo "<br> O resultado é: $resultson";
+	?>
+	<?php
+		$abrearq=fopen("lorem.txt", "w+");
+		$escreveaqr=fwrite($abrearq, "maluquete");
+		fclose($abrearq);
 	?>
 </body>
 </html>
