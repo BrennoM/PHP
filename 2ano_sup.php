@@ -2,8 +2,11 @@
 <html>
 <head>
 	<title></title>
+	<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>	
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 </head>
 <body>
+	<div id="content"></div>
 	<?php
 		if ($_POST["nome"]!=""){
 			echo "Alo ".$_POST["nome"];
